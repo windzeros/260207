@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 문서의 기본 설정 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 이야기를 들어줘!</title>
+
+    <!-- 스타일시트 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 전체 페이지를 감싸는 컨테이너 -->
+    <div class="container">
+
+        <!-- 헤더 영역: 사이트 제목과 설명 -->
+        <header class="header">
+            <h1 class="title">내 이야기를 들어줘!</h1>
+            <p class="subtitle">24시간 당신의 이야기에 귀 기울이는 심리 상담 서비스</p>
+        </header>
+
+        <!-- 채팅 영역: 메시지가 표시되는 곳 -->
+        <div class="chat-area" id="chatArea">
+            <!-- 자바스크립트로 메시지가 여기에 추가됩니다 -->
+        </div>
+
+        <!-- 입력 영역: 메시지를 작성하고 전송하는 곳 -->
+        <div class="input-area">
+            <input
+                type="text"
+                id="userInput"
+                class="message-input"
+                placeholder="고민이나 감정을 편하게 이야기해 주세요..."
+                autocomplete="off"
+            >
+            <button id="sendButton" class="send-button">전송</button>
+        </div>
+    </div>
+
+    <!-- 자바스크립트 파일 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>
