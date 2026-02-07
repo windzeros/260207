@@ -8,7 +8,7 @@
 /* 페이지 배경과 기본 글꼴 설정 */
 body {
     font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;
-    background-color: #FFF5EE; /* 연한 크림색 배경 */
+    background-color: #B2C7D9; /* 카카오톡 배경색 (하늘-회색) */
     min-height: 100vh; /* 화면 전체 높이 */
     display: flex;
     justify-content: center; /* 가로 가운데 정렬 */
@@ -17,38 +17,64 @@ body {
 }
 
 /* ===== 전체 컨테이너 ===== */
-/* 채팅 카드 전체를 감싸는 박스 */
+/* 카카오톡 채팅방 전체를 감싸는 박스 */
 .container {
     width: 100%;
-    max-width: 600px; /* 최대 너비 제한 */
-    height: 90vh; /* 화면 높이의 90% */
-    background-color: #FFFFFF;
-    border-radius: 24px; /* 둥근 모서리 */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08); /* 부드러운 그림자 */
+    max-width: 420px; /* 카카오톡 모바일 너비 */
+    height: 90vh;
+    background-color: #B2C7D9; /* 카카오톡 채팅방 배경색 */
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column; /* 세로 방향 배치 */
-    overflow: hidden; /* 넘치는 내용 숨기기 */
+    overflow: hidden;
 }
 
-/* ===== 헤더 영역 ===== */
-/* 사이트 제목과 설명이 표시되는 상단 영역 */
+/* ===== 헤더 영역 (카카오톡 상단바) ===== */
 .header {
-    background: linear-gradient(135deg, #FFDAB9, #FFB6C1); /* 살구~핑크 그라데이션 */
-    padding: 24px 20px;
+    background-color: #B2C7D9; /* 카카오톡 헤더 배경 */
+    padding: 14px 16px;
+    display: flex;
+    align-items: center; /* 세로 가운데 정렬 */
+    justify-content: space-between; /* 양쪽 끝 배치 */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* 뒤로가기 버튼 (장식용) */
+.header-back {
+    font-size: 22px;
+    color: #3C3C3C;
+    cursor: pointer;
+    width: 30px;
+}
+
+/* 헤더 중앙 영역 (채팅방 이름) */
+.header-center {
     text-align: center;
+    flex: 1;
 }
 
-/* 메인 제목 스타일 */
+/* 메뉴 버튼 (장식용) */
+.header-menu {
+    font-size: 20px;
+    color: #3C3C3C;
+    cursor: pointer;
+    width: 30px;
+    text-align: right;
+}
+
+/* 채팅방 이름 스타일 */
 .title {
-    font-size: 24px;
-    color: #5D4037; /* 따뜻한 갈색 */
-    margin-bottom: 6px;
+    font-size: 16px;
+    color: #1A1A1A;
+    font-weight: 600;
 }
 
-/* 부제목 스타일 */
+/* 부제목 (상담사 표시) */
 .subtitle {
-    font-size: 13px;
-    color: #8D6E63; /* 연한 갈색 */
+    font-size: 11px;
+    color: #5B5B5B;
+    margin-top: 2px;
 }
 
 /* ===== 채팅 영역 ===== */
@@ -56,80 +82,140 @@ body {
 .chat-area {
     flex: 1; /* 남은 공간을 모두 차지 */
     overflow-y: auto; /* 세로 스크롤 활성화 */
-    padding: 20px;
+    padding: 16px 12px;
     display: flex;
-    flex-direction: column; /* 메시지를 위에서 아래로 배치 */
-    gap: 12px; /* 메시지 사이 간격 */
+    flex-direction: column;
+    gap: 8px; /* 메시지 사이 간격 */
 }
 
-/* 스크롤바 스타일 (웹킷 브라우저용) */
+/* 스크롤바 숨기기 (카카오톡처럼 깔끔하게) */
 .chat-area::-webkit-scrollbar {
-    width: 6px;
+    width: 4px;
 }
 
 .chat-area::-webkit-scrollbar-thumb {
-    background-color: #E0C8B8; /* 스크롤바 색상 */
-    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
 }
 
-/* ===== 메시지 공통 스타일 ===== */
-/* 모든 채팅 메시지에 적용되는 기본 스타일 */
-.message {
-    max-width: 80%; /* 메시지 최대 너비 */
-    padding: 12px 16px;
-    border-radius: 18px; /* 둥근 말풍선 */
-    line-height: 1.6; /* 줄 간격 */
-    font-size: 14px;
-    animation: fadeIn 0.4s ease; /* 등장 애니메이션 */
-}
-
-/* ===== 상담사 메시지 (왼쪽) ===== */
-.message.counselor {
-    align-self: flex-start; /* 왼쪽 정렬 */
-    background-color: #FFF0E6; /* 연한 살구색 배경 */
-    color: #4E342E; /* 진한 갈색 글자 */
-    border-bottom-left-radius: 4px; /* 왼쪽 아래 모서리만 각지게 */
-}
-
-/* 상담사 이름 라벨 */
-.message.counselor .name {
-    font-size: 11px;
-    color: #E8976D;
-    font-weight: bold;
-    margin-bottom: 4px;
-}
-
-/* ===== 사용자 메시지 (오른쪽) ===== */
-.message.user {
-    align-self: flex-end; /* 오른쪽 정렬 */
-    background-color: #E8D5F5; /* 연보라색 배경 */
-    color: #4A148C; /* 진한 보라색 글자 */
-    border-bottom-right-radius: 4px; /* 오른쪽 아래 모서리만 각지게 */
-}
-
-/* ===== 타이핑 중 표시 ===== */
-/* 상담사가 응답을 준비할 때 보이는 점 세 개 애니메이션 */
-.typing-indicator {
-    align-self: flex-start;
-    background-color: #FFF0E6;
-    padding: 12px 20px;
-    border-radius: 18px;
-    border-bottom-left-radius: 4px;
+/* ===== 메시지 행 (프로필 + 말풍선 묶음) ===== */
+/* 상담사 메시지: 프로필 아이콘과 말풍선을 가로로 배치 */
+.message-row {
     display: flex;
-    gap: 4px;
+    align-items: flex-start;
+    gap: 8px;
     animation: fadeIn 0.3s ease;
 }
 
-/* 타이핑 점 하나하나의 스타일 */
-.typing-indicator .dot {
-    width: 8px;
-    height: 8px;
-    background-color: #E8976D;
-    border-radius: 50%; /* 원형 */
-    animation: bounce 1.2s infinite; /* 통통 튀는 애니메이션 */
+/* 상담사 메시지 행은 왼쪽 정렬 */
+.message-row.counselor {
+    align-self: flex-start;
 }
 
-/* 각 점의 애니메이션 시작 시간을 다르게 설정 (물결 효과) */
+/* 사용자 메시지 행은 오른쪽 정렬 */
+.message-row.user {
+    align-self: flex-end;
+    flex-direction: row-reverse; /* 프로필 없이 오른쪽 정렬 */
+}
+
+/* ===== 프로필 아이콘 (상담사) ===== */
+/* 카카오톡의 프로필 사진 자리 */
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px; /* 카카오톡 프로필 모서리 */
+    background-color: #FEE500; /* 카카오 노란색 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0; /* 크기 줄어들지 않도록 */
+}
+
+/* ===== 말풍선 내용 영역 ===== */
+.message-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* 상담사 이름 라벨 */
+.message-content .name {
+    font-size: 12px;
+    color: #3C3C3C;
+    font-weight: 600;
+}
+
+/* ===== 말풍선 공통 스타일 ===== */
+.bubble {
+    max-width: 240px;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-break: break-word; /* 긴 단어 줄바꿈 */
+}
+
+/* ===== 상담사 말풍선 (왼쪽, 흰색) ===== */
+.bubble.counselor {
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    border-top-left-radius: 4px; /* 카카오톡 꼬리 느낌 */
+}
+
+/* ===== 사용자 말풍선 (오른쪽, 노란색) ===== */
+.bubble.user {
+    background-color: #FEE500; /* 카카오톡 노란색 */
+    color: #1A1A1A;
+    border-top-right-radius: 4px;
+}
+
+/* ===== 시간 표시 ===== */
+.message-time {
+    font-size: 10px;
+    color: #7B7B7B;
+    align-self: flex-end;
+    flex-shrink: 0;
+}
+
+/* 상담사 메시지의 시간은 말풍선 오른쪽에 */
+.message-row.counselor .message-time {
+    margin-left: 4px;
+}
+
+/* 사용자 메시지의 시간은 말풍선 왼쪽에 */
+.message-row.user .message-time {
+    margin-right: 4px;
+}
+
+/* ===== 타이핑 중 표시 ===== */
+.typing-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: flex-start;
+    animation: fadeIn 0.3s ease;
+}
+
+.typing-indicator {
+    background-color: #FFFFFF;
+    padding: 10px 16px;
+    border-radius: 14px;
+    border-top-left-radius: 4px;
+    display: flex;
+    gap: 5px;
+}
+
+/* 타이핑 점 스타일 */
+.typing-indicator .dot {
+    width: 7px;
+    height: 7px;
+    background-color: #AAAAAA;
+    border-radius: 50%;
+    animation: bounce 1.2s infinite;
+}
+
+/* 각 점의 애니메이션 시작 시간을 다르게 (물결 효과) */
 .typing-indicator .dot:nth-child(2) {
     animation-delay: 0.2s;
 }
@@ -138,55 +224,90 @@ body {
     animation-delay: 0.4s;
 }
 
-/* ===== 입력 영역 ===== */
-/* 메시지 입력창과 전송 버튼이 있는 하단 영역 */
+/* ===== 날짜 구분선 ===== */
+.date-divider {
+    text-align: center;
+    font-size: 11px;
+    color: #6B6B6B;
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 4px 12px;
+    border-radius: 12px;
+    align-self: center;
+    margin: 8px 0;
+}
+
+/* ===== 입력 영역 (카카오톡 하단 입력바) ===== */
 .input-area {
     display: flex;
-    padding: 16px 20px;
-    gap: 10px; /* 입력창과 버튼 사이 간격 */
-    border-top: 1px solid #F0E0D6; /* 상단 구분선 */
-    background-color: #FFFAF5; /* 연한 배경색 */
+    padding: 10px 12px;
+    gap: 8px;
+    align-items: center;
+    background-color: #EEEEEE; /* 카카오톡 입력바 배경 */
+    border-top: 1px solid #D5D5D5;
 }
 
-/* 텍스트 입력창 스타일 */
-.message-input {
-    flex: 1; /* 남은 공간을 모두 차지 */
-    padding: 12px 16px;
-    border: 2px solid #F0D0B8; /* 연한 살구색 테두리 */
-    border-radius: 24px; /* 둥근 모서리 */
-    font-size: 14px;
-    outline: none; /* 기본 포커스 테두리 제거 */
-    font-family: inherit; /* 부모 글꼴 상속 */
-    transition: border-color 0.3s; /* 테두리 색상 변화 애니메이션 */
-}
-
-/* 입력창에 포커스(클릭)했을 때 테두리 색상 변경 */
-.message-input:focus {
-    border-color: #FFB6C1; /* 핑크색 테두리 */
-}
-
-/* 전송 버튼 스타일 */
-.send-button {
-    padding: 12px 24px;
-    background: linear-gradient(135deg, #FFDAB9, #FFB6C1); /* 그라데이션 배경 */
-    color: #5D4037; /* 갈색 글자 */
+/* 이모지 버튼 */
+.icon-button {
+    width: 36px;
+    height: 36px;
     border: none;
-    border-radius: 24px;
+    background: none;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+/* 이모지 버튼 호버 효과 */
+.icon-button:hover {
+    background-color: #D9D9D9;
+}
+
+/* 텍스트 입력창 (카카오톡 스타일) */
+.message-input {
+    flex: 1;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 20px;
     font-size: 14px;
-    font-weight: bold;
-    cursor: pointer; /* 마우스 올리면 손가락 모양 */
-    transition: transform 0.2s, box-shadow 0.2s; /* 호버 애니메이션 */
+    outline: none;
+    font-family: inherit;
+    background-color: #FFFFFF;
 }
 
-/* 전송 버튼에 마우스를 올렸을 때 효과 */
+/* 입력창 포커스 시 */
+.message-input:focus {
+    box-shadow: 0 0 0 1px #B2C7D9;
+}
+
+/* 전송 버튼 (카카오톡 스타일) */
+.send-button {
+    width: 36px;
+    height: 36px;
+    background-color: #FEE500; /* 카카오 노란색 */
+    color: #3C1E1E;
+    border: none;
+    border-radius: 50%; /* 원형 버튼 */
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.15s, background-color 0.15s;
+}
+
+/* 전송 버튼 호버 */
 .send-button:hover {
-    transform: scale(1.05); /* 살짝 커지기 */
-    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4); /* 핑크빛 그림자 */
+    background-color: #F5D800;
+    transform: scale(1.1);
 }
 
-/* 전송 버튼을 클릭했을 때 효과 */
+/* 전송 버튼 클릭 */
 .send-button:active {
-    transform: scale(0.95); /* 살짝 작아지기 */
+    transform: scale(0.9);
 }
 
 /* ===== 애니메이션 정의 ===== */
@@ -194,22 +315,22 @@ body {
 /* 메시지 등장 시 페이드인 효과 */
 @keyframes fadeIn {
     from {
-        opacity: 0; /* 투명 */
-        transform: translateY(10px); /* 아래에서 시작 */
+        opacity: 0;
+        transform: translateY(8px);
     }
     to {
-        opacity: 1; /* 불투명 */
-        transform: translateY(0); /* 원래 위치 */
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-/* 타이핑 표시의 점이 통통 튀는 효과 */
+/* 타이핑 점 통통 튀는 효과 */
 @keyframes bounce {
     0%, 60%, 100% {
-        transform: translateY(0); /* 원래 위치 */
+        transform: translateY(0);
     }
     30% {
-        transform: translateY(-6px); /* 위로 올라감 */
+        transform: translateY(-5px);
     }
 }
 
@@ -217,19 +338,16 @@ body {
 /* 모바일 화면에서의 스타일 조정 */
 @media (max-width: 480px) {
     body {
-        padding: 0; /* 모바일에서는 여백 제거 */
+        padding: 0;
     }
 
     .container {
-        height: 100vh; /* 화면 전체 높이 */
-        border-radius: 0; /* 모서리 둥글기 제거 */
+        height: 100vh;
+        max-width: 100%;
+        border-radius: 0;
     }
 
-    .title {
-        font-size: 20px;
-    }
-
-    .message {
-        max-width: 85%; /* 메시지 너비 살짝 넓힘 */
+    .bubble {
+        max-width: 220px;
     }
 }

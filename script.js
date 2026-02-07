@@ -13,9 +13,9 @@ var responses = {
     스트레스: {
         keywords: ['스트레스', '힘들', '지치', '피곤', '번아웃', '압박', '부담', '벅차', '못하겠', '한계'],
         replies: [
-            '많이 지치셨군요. 그 마음 충분히 이해해요. 잠시 깊은 숨을 함께 쉬어볼까요?',
-            '힘든 상황 속에서도 여기까지 버텨온 당신은 정말 대단해요. 지금 가장 큰 부담이 뭔지 이야기해 주실 수 있나요?',
-            '스트레스가 쌓이면 몸과 마음 모두 힘들어지죠. 오늘은 자신에게 작은 휴식을 선물해 보는 건 어떨까요?'
+            '많이 지치셨군요 😢 그 마음 충분히 이해해요. 잠시 깊은 숨을 함께 쉬어볼까요?',
+            '힘든 상황 속에서도 여기까지 버텨온 당신은 정말 대단해요 💪 지금 가장 큰 부담이 뭔지 이야기해 주실 수 있나요?',
+            '스트레스가 쌓이면 몸과 마음 모두 힘들어지죠. 오늘은 자신에게 작은 휴식을 선물해 보는 건 어떨까요? ☕'
         ]
     },
 
@@ -23,9 +23,9 @@ var responses = {
     불안: {
         keywords: ['불안', '걱정', '무서', '두려', '떨리', '긴장', '초조', '겁나', '공포'],
         replies: [
-            '불안한 마음이 드시는군요. 그 감정은 아주 자연스러운 거예요. 지금 가장 걱정되는 것이 무엇인가요?',
-            '걱정이 많으시군요. 불안할 때는 지금 이 순간에 집중해 보는 것이 도움이 될 수 있어요. 천천히 숨을 들이쉬고 내쉬어 볼까요?',
-            '두려운 마음을 느끼는 것은 용기가 없는 게 아니에요. 오히려 그 감정을 인식하는 것 자체가 큰 용기랍니다.'
+            '불안한 마음이 드시는군요. 그 감정은 아주 자연스러운 거예요 🍃 지금 가장 걱정되는 것이 무엇인가요?',
+            '걱정이 많으시군요. 불안할 때는 지금 이 순간에 집중해 보는 것이 도움이 될 수 있어요. 천천히 숨을 들이쉬고 내쉬어 볼까요? 🌬️',
+            '두려운 마음을 느끼는 것은 용기가 없는 게 아니에요. 오히려 그 감정을 인식하는 것 자체가 큰 용기랍니다 🌟'
         ]
     },
 
@@ -33,9 +33,9 @@ var responses = {
     우울: {
         keywords: ['우울', '슬프', '눈물', '울고', '울어', '암울', '절망', '희망이 없', '의미 없', '무기력'],
         replies: [
-            '마음이 많이 무거우시군요. 슬플 때 울어도 괜찮아요. 감정을 표현하는 것은 아주 건강한 방법이에요.',
-            '지금 힘든 시간을 보내고 계시는군요. 어둠 뒤에는 반드시 빛이 찾아와요. 당신은 혼자가 아니에요.',
-            '우울한 감정이 드실 때, 무리하지 않아도 괜찮아요. 오늘 하루 잘 버텨낸 것만으로도 충분히 훌륭해요.'
+            '마음이 많이 무거우시군요. 슬플 때 울어도 괜찮아요. 감정을 표현하는 것은 아주 건강한 방법이에요 💧',
+            '지금 힘든 시간을 보내고 계시는군요. 어둠 뒤에는 반드시 빛이 찾아와요 🌅 당신은 혼자가 아니에요.',
+            '우울한 감정이 드실 때, 무리하지 않아도 괜찮아요. 오늘 하루 잘 버텨낸 것만으로도 충분히 훌륭해요 🤗'
         ]
     },
 
@@ -43,9 +43,9 @@ var responses = {
     외로움: {
         keywords: ['외로', '혼자', '고독', '쓸쓸', '아무도', '친구가 없', '관심', '소외'],
         replies: [
-            '외로운 마음이 드시는군요. 저는 항상 여기서 당신의 이야기를 듣고 있어요. 편하게 말씀해 주세요.',
-            '혼자라고 느껴질 때가 있죠. 하지만 이렇게 마음을 열어주신 것만으로도 큰 한 걸음이에요.',
-            '외로운 감정은 누구나 느낄 수 있어요. 지금 이 순간, 제가 당신의 이야기에 귀 기울이고 있다는 걸 기억해 주세요.'
+            '외로운 마음이 드시는군요. 저는 항상 여기서 당신의 이야기를 듣고 있어요 🤝 편하게 말씀해 주세요.',
+            '혼자라고 느껴질 때가 있죠. 하지만 이렇게 마음을 열어주신 것만으로도 큰 한 걸음이에요 👣',
+            '외로운 감정은 누구나 느낄 수 있어요. 지금 이 순간, 제가 당신의 이야기에 귀 기울이고 있다는 걸 기억해 주세요 💛'
         ]
     },
 
@@ -53,9 +53,9 @@ var responses = {
     인간관계: {
         keywords: ['관계', '친구', '가족', '연인', '이별', '싸움', '갈등', '배신', '사람', '직장 동료', '왕따'],
         replies: [
-            '인간관계에서 어려움을 겪고 계시군요. 관계의 문제는 정말 마음이 아프죠. 어떤 상황인지 좀 더 이야기해 주실 수 있나요?',
-            '사람과의 관계에서 상처받는 것은 정말 힘든 일이에요. 당신의 감정은 충분히 타당해요.',
-            '갈등 상황에서는 서로의 입장을 이해하는 시간이 필요해요. 지금 가장 힘든 부분이 무엇인지 들려주세요.'
+            '인간관계에서 어려움을 겪고 계시군요 😔 관계의 문제는 정말 마음이 아프죠. 어떤 상황인지 좀 더 이야기해 주실 수 있나요?',
+            '사람과의 관계에서 상처받는 것은 정말 힘든 일이에요. 당신의 감정은 충분히 타당해요 💜',
+            '갈등 상황에서는 서로의 입장을 이해하는 시간이 필요해요. 지금 가장 힘든 부분이 무엇인지 들려주세요 👂'
         ]
     },
 
@@ -63,9 +63,9 @@ var responses = {
     자존감: {
         keywords: ['자존감', '자신감', '못생', '못난', '부족', '실패', '무능', '바보', '열등', '비교', '자격'],
         replies: [
-            '자신에 대해 힘든 감정을 느끼고 계시군요. 당신은 있는 그대로 충분히 가치 있는 사람이에요.',
-            '다른 사람과 비교할 필요 없어요. 당신만의 속도가 있고, 당신만의 빛이 있어요. 스스로에게 좀 더 따뜻해져 볼까요?',
-            '실패는 끝이 아니라 성장의 과정이에요. 지금 느끼는 감정을 인정하되, 자신을 너무 몰아세우지 마세요.'
+            '자신에 대해 힘든 감정을 느끼고 계시군요. 당신은 있는 그대로 충분히 가치 있는 사람이에요 ✨',
+            '다른 사람과 비교할 필요 없어요. 당신만의 속도가 있고, 당신만의 빛이 있어요 🌈 스스로에게 좀 더 따뜻해져 볼까요?',
+            '실패는 끝이 아니라 성장의 과정이에요 🌱 지금 느끼는 감정을 인정하되, 자신을 너무 몰아세우지 마세요.'
         ]
     },
 
@@ -73,9 +73,9 @@ var responses = {
     수면: {
         keywords: ['잠', '수면', '불면', '못 자', '새벽', '악몽', '깨어'],
         replies: [
-            '잠을 잘 못 주무시고 계시군요. 수면은 마음 건강에 아주 중요해요. 잠들기 전에 따뜻한 차 한 잔은 어떠세요?',
-            '불면이 지속되면 정말 힘들죠. 자기 전에 가볍게 스트레칭을 하거나, 편안한 음악을 들어보는 건 어떨까요?',
-            '밤에 생각이 많아지면 잠들기 어렵죠. 오늘 걱정은 내일의 나에게 맡기고, 지금은 편안히 쉬어보세요.'
+            '잠을 잘 못 주무시고 계시군요 🌙 수면은 마음 건강에 아주 중요해요. 잠들기 전에 따뜻한 차 한 잔은 어떠세요?',
+            '불면이 지속되면 정말 힘들죠. 자기 전에 가볍게 스트레칭을 하거나, 편안한 음악을 들어보는 건 어떨까요? 🎵',
+            '밤에 생각이 많아지면 잠들기 어렵죠. 오늘 걱정은 내일의 나에게 맡기고, 지금은 편안히 쉬어보세요 🌜'
         ]
     }
 };
@@ -83,62 +83,141 @@ var responses = {
 // ===== 기본 응답 =====
 // 어떤 키워드에도 해당하지 않을 때 보여줄 일반적인 응답들
 var defaultReplies = [
-    '이야기를 들려주셔서 감사해요. 좀 더 자세히 이야기해 주실 수 있나요?',
-    '당신의 마음이 궁금해요. 어떤 감정이 드시나요?',
-    '편하게 말씀해 주세요. 저는 언제든 당신의 이야기를 들을 준비가 되어 있어요.',
-    '그렇군요. 그 상황에서 어떤 기분이 드셨나요?',
-    '당신의 이야기에 귀 기울이고 있어요. 천천히 이야기해 주세요.'
+    '이야기를 들려주셔서 감사해요 😊 좀 더 자세히 이야기해 주실 수 있나요?',
+    '당신의 마음이 궁금해요. 어떤 감정이 드시나요? 💭',
+    '편하게 말씀해 주세요. 저는 언제든 당신의 이야기를 들을 준비가 되어 있어요 🤗',
+    '그렇군요. 그 상황에서 어떤 기분이 드셨나요? 🍀',
+    '당신의 이야기에 귀 기울이고 있어요. 천천히 이야기해 주세요 💛'
 ];
 
 // ===== 환영 메시지 =====
 // 페이지가 처음 로드될 때 상담사가 보내는 인사 메시지
 var welcomeMessages = [
-    '안녕하세요! "내 이야기를 들어줘!"에 오신 것을 환영해요.',
-    '저는 24시간 당신의 이야기를 들어주는 심리 상담사예요. 오늘 하루는 어떠셨나요? 편하게 이야기해 주세요.'
+    '안녕하세요! 👋 "내 이야기를 들어줘!"에 오신 것을 환영해요.',
+    '저는 24시간 당신의 이야기를 들어주는 심리 상담사예요 🌿 오늘 하루는 어떠셨나요? 편하게 이야기해 주세요.'
 ];
+
+// ===== 현재 시간을 "오후 3:24" 형식으로 반환하는 함수 =====
+function getCurrentTime() {
+    var now = new Date();
+    var hours = now.getHours();       // 0~23 시간 가져오기
+    var minutes = now.getMinutes();   // 0~59 분 가져오기
+
+    // 오전/오후 구분
+    var period = hours < 12 ? '오전' : '오후';
+
+    // 12시간제로 변환 (0시는 12시로 표시)
+    var displayHours = hours % 12;
+    if (displayHours === 0) {
+        displayHours = 12;
+    }
+
+    // 분이 한 자리일 때 앞에 0 붙이기 (예: 3:05)
+    var displayMinutes = minutes < 10 ? '0' + minutes : minutes;
+
+    return period + ' ' + displayHours + ':' + displayMinutes;
+}
+
+// ===== 오늘 날짜를 "2026년 2월 7일 금요일" 형식으로 반환하는 함수 =====
+function getTodayDate() {
+    var now = new Date();
+    var days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1; // 월은 0부터 시작하므로 +1
+    var date = now.getDate();
+    var day = days[now.getDay()];
+
+    return year + '년 ' + month + '월 ' + date + '일 ' + day;
+}
 
 // ===== 함수 정의 =====
 
 /**
- * 채팅 영역에 메시지를 추가하는 함수
+ * 채팅 영역에 메시지를 추가하는 함수 (카카오톡 스타일)
+ * 프로필 아이콘 + 이름 + 말풍선 + 시간 구조로 표시
  * @param {string} text - 표시할 메시지 내용
  * @param {string} sender - 메시지 보낸 사람 ('user' 또는 'counselor')
  */
 function addMessage(text, sender) {
-    // 새로운 div 요소를 만듦
-    var messageDiv = document.createElement('div');
+    // 메시지 행(row)을 만듦 - 프로필과 말풍선을 감싸는 컨테이너
+    var messageRow = document.createElement('div');
+    messageRow.className = 'message-row ' + sender;
 
-    // 메시지 스타일 클래스 추가 (user 또는 counselor)
-    messageDiv.className = 'message ' + sender;
-
-    // 상담사 메시지인 경우 이름 라벨을 추가
+    // 상담사 메시지인 경우 프로필 아이콘 추가
     if (sender === 'counselor') {
-        var nameSpan = document.createElement('div');
-        nameSpan.className = 'name';
-        nameSpan.textContent = '상담사';
-        messageDiv.appendChild(nameSpan);
+        // 프로필 아이콘 (이모지로 표현)
+        var profileIcon = document.createElement('div');
+        profileIcon.className = 'profile-icon';
+        profileIcon.textContent = '🧑‍⚕️';
+        messageRow.appendChild(profileIcon);
+
+        // 이름 + 말풍선을 묶는 영역
+        var messageContent = document.createElement('div');
+        messageContent.className = 'message-content';
+
+        // 상담사 이름 라벨
+        var nameLabel = document.createElement('div');
+        nameLabel.className = 'name';
+        nameLabel.textContent = '심리 상담사';
+        messageContent.appendChild(nameLabel);
+
+        // 말풍선
+        var bubble = document.createElement('div');
+        bubble.className = 'bubble counselor';
+        bubble.textContent = text;
+        messageContent.appendChild(bubble);
+
+        messageRow.appendChild(messageContent);
+    } else {
+        // 사용자 말풍선 (프로필 아이콘 없음)
+        var bubble = document.createElement('div');
+        bubble.className = 'bubble user';
+        bubble.textContent = text;
+        messageRow.appendChild(bubble);
     }
 
-    // 메시지 텍스트 추가
-    var textSpan = document.createElement('span');
-    textSpan.textContent = text;
-    messageDiv.appendChild(textSpan);
+    // 시간 표시 추가
+    var timeSpan = document.createElement('span');
+    timeSpan.className = 'message-time';
+    timeSpan.textContent = getCurrentTime();
+    messageRow.appendChild(timeSpan);
 
     // 채팅 영역에 메시지 추가
-    chatArea.appendChild(messageDiv);
+    chatArea.appendChild(messageRow);
 
     // 새 메시지가 보이도록 자동으로 맨 아래로 스크롤
     chatArea.scrollTop = chatArea.scrollHeight;
 }
 
 /**
+ * 날짜 구분선을 추가하는 함수 (카카오톡의 날짜 표시)
+ */
+function addDateDivider() {
+    var divider = document.createElement('div');
+    divider.className = 'date-divider';
+    divider.textContent = getTodayDate();
+    chatArea.appendChild(divider);
+}
+
+/**
  * 타이핑 중 표시(점 세 개 애니메이션)를 보여주는 함수
- * 상담사가 응답을 준비하는 동안 표시됨
+ * 카카오톡 스타일로 프로필 아이콘과 함께 표시
  */
 function showTypingIndicator() {
+    // 타이핑 행 (프로필 + 타이핑 표시)
+    var typingRow = document.createElement('div');
+    typingRow.className = 'typing-row';
+    typingRow.id = 'typingIndicator';
+
+    // 프로필 아이콘
+    var profileIcon = document.createElement('div');
+    profileIcon.className = 'profile-icon';
+    profileIcon.textContent = '🧑‍⚕️';
+    typingRow.appendChild(profileIcon);
+
+    // 타이핑 표시 (점 세 개)
     var typingDiv = document.createElement('div');
     typingDiv.className = 'typing-indicator';
-    typingDiv.id = 'typingIndicator';
 
     // 점 세 개 추가
     for (var i = 0; i < 3; i++) {
@@ -147,7 +226,8 @@ function showTypingIndicator() {
         typingDiv.appendChild(dot);
     }
 
-    chatArea.appendChild(typingDiv);
+    typingRow.appendChild(typingDiv);
+    chatArea.appendChild(typingRow);
     chatArea.scrollTop = chatArea.scrollHeight;
 }
 
@@ -240,8 +320,11 @@ userInput.addEventListener('keypress', function(event) {
 });
 
 // ===== 페이지 로드 시 환영 메시지 표시 =====
-// 페이지가 열리면 상담사가 환영 인사를 보냄
+// 페이지가 열리면 날짜 구분선과 상담사 환영 인사를 보냄
 window.addEventListener('load', function() {
+    // 날짜 구분선 추가 (카카오톡처럼)
+    addDateDivider();
+
     // 첫 번째 환영 메시지를 0.5초 후에 표시
     setTimeout(function() {
         addMessage(welcomeMessages[0], 'counselor');

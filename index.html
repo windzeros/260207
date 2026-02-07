@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 전체 페이지를 감싸는 컨테이너 -->
+    <!-- 전체 페이지를 감싸는 컨테이너 (카카오톡 채팅방 느낌) -->
     <div class="container">
 
-        <!-- 헤더 영역: 사이트 제목과 설명 -->
+        <!-- 헤더 영역: 카카오톡 상단바 스타일 -->
         <header class="header">
-            <h1 class="title">내 이야기를 들어줘!</h1>
-            <p class="subtitle">24시간 당신의 이야기에 귀 기울이는 심리 상담 서비스</p>
+            <!-- 뒤로가기 버튼 (장식용) -->
+            <span class="header-back">&#8592;</span>
+            <!-- 채팅방 이름 -->
+            <div class="header-center">
+                <h1 class="title">내 이야기를 들어줘! 🌿</h1>
+                <p class="subtitle">심리 상담사 🤗</p>
+            </div>
+            <!-- 메뉴 버튼 (장식용) -->
+            <span class="header-menu">&#9776;</span>
         </header>
 
         <!-- 채팅 영역: 메시지가 표시되는 곳 -->
@@ -24,16 +31,20 @@
             <!-- 자바스크립트로 메시지가 여기에 추가됩니다 -->
         </div>
 
-        <!-- 입력 영역: 메시지를 작성하고 전송하는 곳 -->
+        <!-- 입력 영역: 카카오톡 하단 입력바 스타일 -->
         <div class="input-area">
+            <!-- 이모지 버튼 -->
+            <button id="emojiButton" class="icon-button">😊</button>
+            <!-- 텍스트 입력창 -->
             <input
                 type="text"
                 id="userInput"
                 class="message-input"
-                placeholder="고민이나 감정을 편하게 이야기해 주세요..."
+                placeholder="메시지를 입력하세요..."
                 autocomplete="off"
             >
-            <button id="sendButton" class="send-button">전송</button>
+            <!-- 전송 버튼 -->
+            <button id="sendButton" class="send-button">➤</button>
         </div>
     </div>
 
